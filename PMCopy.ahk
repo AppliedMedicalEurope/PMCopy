@@ -21,5 +21,7 @@ Sleep 500
 OldStr = %Clipboard%
 
 StringReplace, NewStr, OldStr, %A_SPACE%, , All
+StringReplace, OldStr, NewStr, `r,, 2
+StringReplace, NewStr, OldStr, `n,, 2
 
 Clipboard = %NewStr%
